@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Akhand Jyoti Hanuman Mandir, Undai</title>
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="marquee-container">
+    <div class="marquee">
+      🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम
+      जय हनुमान 🔔
+        </div>
+  </div>
+  <!-- Header section with temple name and tagline -->
+  <header>
+    <div class="header-container">
+      <p class="shloka">ॐ हनुमते नमः॥</p>
+      <h1>श्री अखण्ड ज्योति हनुमान मंदिर, उन्दई</h1>
+      <p class="tagline">जहां 85 वर्षों से अखण्ड दीप जल रहा है और मनोकामनाएं होती हैं पूर्ण।</p>
+    </div>
+    
+
+  </header><!-- Navigation bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="javascript:void(0);" onclick="toggleAbout()">About</a></li>
+      <li>><a href="#" onclick="showComingSoon">Gallery</a></li>
+      <li><a href="#wish">Submit Wish</a></li>
+      <li><a href="#" onclick="showComingSoon">Donate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Language Toggle -->
+  <div class="language-toggle">
+    <button id="langBtn">हिंदी</button>
+  </div>
+  <!-- Modern Slider (like Netflix style) -->
+  <div class="slider-container">
+    <div class="slider-track" id="slideTrack">
+      <img src="images/slider1.jpg" class="slide" alt="Temple 1">
+      <img src="images/slider2.jpg" class="slide" alt="Temple 2">
+      <img src="images/slider3.jpg" class="slide" alt="Temple 3">
+      <img src="images/slider4.jpg" class="slide" alt="Temple 4">
+      <img src="images/slider5.jpg" class="slide" alt="Temple 5">
+    </div>
+    <!-- Dots navigation -->
+    <div class="dots-container" id="dotsContainer"></div>
+      
+  </div>
+  <section id="about" class="about-section" style="display: none;">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>🛕 मंदिर का इतिहास</h2>
+        <p>
+          <strong>"श्री अखंड ज्योति हनुमान मंदिर"</strong> की स्थापना वर्ष <b>1938</b> में स्वर्गीय श्री प्रभुलाल जी
+          पाठक द्वारा की गई थी। यह
+          मंदिर न केवल श्रद्धा का केंद्र है, बल्कि एक आध्यात्मिक शक्ति का प्रतीक भी है।
+
+          वर्तमान में मंदिर की सेवा और पूजन का कार्य श्री नंदकिशोर जी पाठक एवं श्री अशोक जी पाठक द्वारा श्रद्धा व समर्पण
+          भाव से किया जा रहा है।
+        </p>
+        <p>
+
+          समय के साथ मंदिर का स्वरूप भी विकसित हुआ है। श्रद्धालुओं की सुविधा और मंदिर की सुंदरता को ध्यान में रखते हुए
+          वर्ष 2016 में मंदिर का भव्य जीर्णोद्धार (Renovation) कार्य सम्पन्न किया गया।
+
+          यह मंदिर वर्षों से श्रद्धालुओं की आस्था, विश्वास एवं मनोकामनाओं का केंद्र रहा है, और आज भी यहाँ अखंड ज्योति
+          प्रज्वलित होकर भक्तों के जीवन में उजाला भर रही है।
+
+        </p>
+        <p>
+          श्री अखण्ड ज्योति हनुमान मंदिर, उन्दई — यह स्थान भक्ति, आस्था और चमत्कार का अद्भुत संगम है। यहाँ पिछले
+          <strong>88 वर्षों</strong> से एक अखंड दीपक जल रहा है, जो आज तक कभी नहीं बुझा।
+
+          ऐसा विश्वास है कि जो भी भक्त सच्चे मन से यहाँ अपनी मनोकामना लेकर आता है, उसकी सभी इच्छाएँ पूर्ण होती हैं।
+          विशेषकर, संतान की इच्छा रखने वाले दंपत्तियों को यहाँ आने पर संतान सुख की प्राप्ति होती है।
+        </p>
+        <p>
+          यह मंदिर केवल एक ईंट-पत्थर की संरचना नहीं, बल्कि श्रद्धा, भक्ति और विश्वास की जीवंत प्रतीक है। हर मंगलवार को
+          यहाँ विशेष पूजा व आरती का आयोजन होता है, जिसमें दूर-दूर से भक्तगण सम्मिलित होते हैं।
+        </p>
+        <button onclick="toggleAbout()" class="close_about">close_about</button>
+      </div>
+      <div class="about-image">
+        <img src="images/DSC04972.JPG" alt="Mandir History Image">
+      </div>
+    </div>
+  </section>
+  <section id="wish-section" class="wish-section">
+    <h2>अपनी मनोकामना व्यक्त करें</h2>
+    <form id="wishForm">
+      <input type="text" id="name" name="name" placeholder="आपका नाम" required>
+      <textarea id="wish" name="wish" placeholder="अपनी मनोकामना लिखें..." required></textarea>
+      <button type="submit">सबमिट करें</button>
+    </form>
+  </section>
+
+  <!-- Success popup -->
+  <div id="wishSuccessPopup" class="popup" style="display: none;">
+    <p>🙏 आपकी मनोकामना सफलतापूर्वक सबमिट हो गई है!</p>
+  </div>
+
+  <!-- Contact Button -->
+  <button id="contactBtn">📞 संपर्क करें</button>
+
+  <!-- Contact Section Popup -->
+  <div id="contactSection" class="contact-popup">
+    <div class="contact-content">
+      <span id="closeContact" class="close-btn">❌</span>
+      <h2>संपर्क करें</h2>
+      <p><strong>मंदिर का पता:</strong><br>
+        श्री अखंड ज्योति हनुमान मंदिर, उंदई, मध्य प्रदेश
+      </p>
+      <p><strong>Google Map:</strong><br>
+        <a href="https://www.google.com/maps?q=Shri+Akhand+Jyoti+Hanuman+Mandir+Undai" target="_blank">
+          यहां क्लिक करें 🔗
+        </a>
+      </p>
+      <p><strong>फोन:</strong> ‪+91-9977855084‬</p>
+      <p><strong>ईमेल:</strong> mandirundai@example.com</p>
+        
+    </div>
+  </div>
+
+  <!-- Hero section with background image and main message -->
+  <div class="hero">
+    <h1>85 Years of Eternal Flame</h1>
+    <p>People say that whoever prays here with true heart is blessed — especially couples seeking children.</p>
+    <div class="buttons">
+      <a href="#about">Learn More</a>
+      <a href="#wish">Submit a Prayer</a>
+      <a href="#donate">Donate</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Temple Address</h3>
+        <p>Shri Akhand Jyoti Hanuman Mandir,<br>Undai shujalpur, shajapur-Madhya Pradesh, India</p>
+        <p>Email: </p>
+        <p>Phone: ‪+91 99778 55084‬</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Mandir</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#wish">Submit Wish</a></li>
+          <li><a href="#donate">Donate</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Timings</h3>
+        <p>Morning Aarti: 7:00 AM</p>
+        <p>Evening Aarti: 7:00 PM</p>
+        <p>Special Darshan: Every Tuesday</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Shri Akhand Jyoti Hanuman Mandir, Undai. All Rights Reserved.</p>
+    </div>
+      
+  </footer>
+  <script src="script.js"></script>
+
+
+</body>
+<div class="marquee-container">
+  <div class="marquee">
+    🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम जय हनुमान 🔔 जय श्री राम
+    जय हनुमान 🔔
+      </div>
+</div>
+
+</html>

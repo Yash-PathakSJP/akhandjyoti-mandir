@@ -1,0 +1,516 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+}
+
+/* Header section */
+/* Header with Shloka and Hindi title */
+header {
+  background-color: #ec9e37;
+  color: white;
+  padding: 40px 20px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+}
+
+.shloka {
+  font-size: 1.3rem;
+  color: #ffcc80;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.header-container h1 {
+  font-size: 2.5rem;
+  color: #fff176;
+  margin: 0;
+  text-shadow: 2px 2px 5px #000000;
+  position: relative;
+}
+
+.header-container h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #ffca28;
+  margin-top: 10px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #fffde7;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Navigation bar */
+/* NAVIGATION BAR */
+.navbar {
+  background: linear-gradient(to right, #8B0000, #FF4500);
+  /* deep red to orange */
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 80%;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/*for mobile screen hamber view*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d32f2f;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d32f2f;
+  }
+
+  #toggle-menu:checked+.menu-icon+.nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* langauge button*/
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#langBtn {
+  padding: 6px 14px;
+  border: none;
+  background-color: #f4a261;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+  background: url('images/diya.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Hero buttons */
+.buttons a {
+  background-color: #ffca28;
+  color: #000;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.buttons a:hover {
+  background-color: #ffd54f;
+}
+
+/* Footer section */
+footer {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #ffca28;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #bbbbbb;
+}
+
+/* Slider arrows */
+/* Modern Slider Styles */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  /* Adjust depending on number of slides */
+}
+
+.slide {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+/* Top Marquee for Bhajan Chant */
+.marquee-container {
+  background-color: #ffd54f;
+  color: #4e342e;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Hind', sans-serif;
+  border-bottom: 2px solid #ffa000;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-marquee 20s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Top Marquee for Bhajan Chant */
+.marquee-container {
+  background-color: #ffd54f;
+  color: #4e342e;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Hind', sans-serif;
+  border-bottom: 2px solid #ffa000;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-marquee 20s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*about section*/
+.about-section {
+  background-color: #fffef5;
+  padding: 60px 20px;
+  font-family: 'Hind', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 60%;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  color: #8B0000;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #4a2c00;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.close_about {
+  background-color: #d35400;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close_about:hover {
+  background-color: #b34400;
+}
+
+#contactBtn {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.contact-content h2 {
+  margin-top: 0;
+  color: #2a2a2a;
+}
+
+.contact-content a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+/*wish sction*/
+.wish-section {
+  padding: 30px;
+  background-color: #fff4e6;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.wish-section h2 {
+  text-align: center;
+  color: #b32d00;
+}
+
+.wish-section input,
+.wish-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.wish-section button {
+  background-color: #d63333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.popup {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 400px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    background-image: url("images/mobile-background.jpg");
+    /* Use smaller image */
+    background-size: cover;
+    background-position: center;
+  }
+}
