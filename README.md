@@ -2,8 +2,8 @@
 
 🙏 This is the *official website* of Shri Akhand Jyoti Hanuman Mandir, located in *Undai*, Madhya Pradesh. The website provides details about the temple's rich history, wish submission, pooja rituals, and more.
 
-🔗 *Live Website:* [Click Here to Visit](https://yourusername.github.io/your-repo-name)  
-(Replace with your actual GitHub Pages link)
+🔗 *Live Website:* [Click Here to Visit]https://yash-pathaksjp.github.io/akhandjyoti-mandir/
+
 
 ---
 
