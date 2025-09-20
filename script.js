@@ -9,16 +9,6 @@ function showSlide(index) {
   dotsContainer.children[index].classList.add('active');
   currentSlide = index;
 }
-
-function createDots() {
-  slides.forEach((_, i) => {
-    const dot = document.createElement('span');
-    dot.classList.add('dot');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => showSlide(i));
-    dotsContainer.appendChild(dot);
-  });
-}
 function toggleAbout() {
   const about = document.getElementById("about");
   if (about.style.display === "none" || about.style.display === "") {
@@ -40,8 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 document.getElementById("wishForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
-  // Optional: Get the data
   const name = document.getElementById("name").value;
   const wish = document.getElementById("wish").value;
 
@@ -86,7 +74,6 @@ function switchToHindi() {
   document.getElementById("navContact").textContent = "संपर्क करें";
   document.getElementById("aboutTitle").textContent = "मंदिर का इतिहास";
   document.getElementById("wishBtn").textContent = "अपनी इच्छा लिखें";
-  // Add more as needed
 }
 
 function switchToEnglish() {
@@ -96,7 +83,6 @@ function switchToEnglish() {
   document.getElementById("navContact").textContent = "Contact";
   document.getElementById("aboutTitle").textContent = "Mandir History";
   document.getElementById("wishBtn").textContent = "Write Your Wish";
-  // Add more as needed
 }
 function showComingSoon(){
   alert("यह सुविधा अभी उपलब्ध नही है । जल्द ही जोड़ी जाएगी 🙏🏻")
